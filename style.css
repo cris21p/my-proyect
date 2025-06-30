@@ -1,0 +1,609 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+    --color-star--: #000000;
+    --color-secud--: #0c0c0c;
+    --color-text-secud--: #b39f70;
+    --color-text--: #cecece;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body, div, ul, nav, header, footer, a, li, label{
+    margin: 0;
+    padding: 0;
+}
+
+/*-------navbar--------*/
+.nav-bar{
+    padding: 15px;
+    container-type: inline-size;
+    container-name: nav-bar;
+}
+
+.nav_bar-box{
+    padding: 0px 20px;
+}
+
+.nav_bar-box li{
+    list-style: none;
+}
+
+.nav-link{
+    color: #cecece;
+    margin: 0px 0px 10px 0px;
+    width: 160px;
+}
+
+.nav-row{
+    display: none;
+}
+
+.nav-link:hover{
+    color: #efefef;
+    background-color: #1b1a1a;
+}
+
+.flex-column{
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    color: #cecece;
+}
+
+.header{
+    background-color: var(--color-star--);
+}
+
+.header__nav-enlace{
+    color: var(--color-text-secud--);
+} 
+.header__nav{
+    background-color: var(--color-secud--);
+} 
+
+.nav__ic{
+    color: var(--color-text-secud--);
+} 
+
+.home__content{
+    color: var(--color-text--);
+}
+
+.ct--bt{
+    background-color: var(--color-text-secud--);
+} 
+
+.section__cr{
+    background-color: var(--color-secud--);
+}
+
+.container--ic {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    bottom: -0;
+    width: 100vw;
+}
+
+.nav__list-ic {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 15px 23px;
+}
+
+.nav__enl-ic {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px 20px 0px 0px;
+}
+/*--------------------------end navbar----------------------------*/
+/*-------------------mediaquery navbar----------------*/
+
+@container nav-bar (min-width: 700px){
+
+    .nav-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+    }
+
+    .nav-link:hover{
+        background-color: #0007;
+        color: #8b8585;
+        text-decoration:underline;
+    }
+
+    .nav-row{
+        display: flex;
+    }
+
+    .btn{
+        display: none;
+    }
+}
+
+/*-----------------end mediaquery--------------------*/
+
+/*--------------------header-------------------------*/
+
+.header__img-br{
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #8b8585;
+    background-image: url(/imagenes/man-barbershop-salon-doing-haircut-beard-trim.jpg);
+    background-position:center;
+    background-size: cover;
+    width: 100dvw;
+    min-height: 95dvb;
+    container-type: inline-size;
+    container-name: conteer;
+}
+
+.ct-bg{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: lowercase;
+    padding: 20px;
+    background-color: #0009;
+    width: 100dvw;
+    min-height: 95dvh;
+    margin: 0;
+}
+
+h1{
+    color: var(--color-text--);
+    display: flex;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: 20px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.ct-bg p{
+    color: var(--color-text--);
+    font-size: 18px;
+    display: flex;
+    margin: 40px 10px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.ct-enl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+}
+
+.enl-tx{
+    display: flex;
+    background-color: var(--color-text-secud--);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    margin-top: 60px;
+    text-decoration: none;
+    color: var(--color-text--);
+}
+
+.enl-tx:hover{
+    text-decoration: underline;
+}
+
+.enl-tx:hover:active{
+    text-decoration: underline;
+    background-color: #908467;
+}
+
+/*--------------------End Header-------------------------*/
+
+/*-------------------mediaquery navbar----------------*/
+
+@container conteer (min-width: 700px){
+    .ct-bg h1{
+        font-size: clamp(1rem, 2vw, 2.5rem);
+        font-weight: bolder;
+    }
+
+    .ct-bg p{
+        font-size: clamp(1rem, 2vw, 2rem);
+        text-align: center;
+        width: 42.5rem;
+        padding: 8px;
+    }
+}
+
+/*-------------------end mediaquery--------------------*/
+
+/*--------------------section-------------------------*/
+
+.inform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secud--);
+    width: 100dvw;
+    container-type: inline-size;
+    container-name: inform;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.inform h2{
+    margin: 30px;
+    color: var(--color-text--);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2rem, 2vw, 1.5rem);
+}
+
+.inform-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bx{
+    justify-content: center;
+    align-items: center;
+    width: 18.75rem;
+    height: 23rem;
+    margin: 10px;
+}
+
+.img1{
+    background-image: url(/imagenes/handsome-man-barbershop-shaving-beard.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    background-image: url(/imagenes/hairdresser-man-with-scissors-closeup-photo-hairdresser-man-background_474717-174348.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img3{
+    background-image: url(/imagenes/barber-cuts-beard-brutal-guy_153608-1540.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bord-text{
+    width: 150px;
+    height: 1px;
+    margin: 20px;
+    background-color: var(--color-text-secud--);
+}
+
+.inform__img{
+    width: 100%;
+    height: 100%;
+}
+
+.inform__contect h2{
+    margin: 20px;
+    text-align: left;
+}
+
+.container-text{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    display: block;
+    font-size: 18px;
+    margin: 20px;
+    color: var(--color-text--);
+    font-weight: bolder;
+}
+
+.inform__contect{
+    display:block;
+    width: 18.75rem;
+}
+
+.inform__contect span{
+    color: var(--color-text-secud--);
+    text-decoration: underline;
+}
+
+/*-----------end sectiob--------------*/
+
+/*--------------selection aqueris---------------*/
+
+
+
+@container inform (min-width: 700px){
+    .inform{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 100vh;
+    }
+
+    .inform-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100vh;
+    }
+
+    .bx{
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 45%;
+}
+
+.img3{
+    width: 30%;
+}
+
+    .inform__contect{
+        display: block;
+        flex-direction: column;
+        margin: 15px;
+        width: 50%;
+        height: 45%;
+        font-size: clamp(1rem, 2vw, 1rem);
+    }
+
+    .container-text{
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .text{
+        text-align: center;
+    }
+}
+
+/*------------------end aqueris-----------------*/
+/*--------------------inform-bg-------------------------*/
+
+.inform-bg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    container-type: inline-size;
+    container-name: inform-bg;
+    padding: 0;
+    background-color: #626161;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.inform-ct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+.inform__ctx{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 30px 0px;
+    height: 35rem;
+    width: 90%;
+}
+
+.b-x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    height: 30rem;
+    width: 90%;
+}
+
+.img5{
+    background-image: url(/imagenes/portrait-tattooed-male-barber-hblade.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.enl-ct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.text-enl{
+    display: flex;
+    background-color: var(--color-text-secud--);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+    color: var(--color-text--);
+}
+
+.text-enl:active{
+    background-color: #908467;
+    text-decoration: underline;
+}
+
+.text{
+    display: flex;
+    font-size: 18px;
+    direction: rtl;
+}
+
+.bd-text{
+    width: 150px;
+    height: 1px;
+    margin: 20px 0px;
+    background-color: var(--color-text-secud--);
+}
+
+/*--------------------end inform-bg-------------------------*/
+/*--------------------Inform-bg Mediaquerias-------------------------*/
+
+@container inform-bg (min-width: 700px){
+    .inform-bg{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .inform-ct{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        height: auto;
+    }
+
+    .inform__ctx{
+        flex-direction: column;
+        margin: 20px;
+        height: 45%;
+        width: 40%;
+        font-size: clamp(1rem, 2vw, 1rem);
+    }
+
+    .b-x{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30rem;
+        width: 40%;
+        font-size: clamp(1rem, 2vw, 1rem);
+    }
+
+    .text-enl{
+        width: 200px;
+    }
+}
+
+/*--------------------end Mediaquerias-------------------------*/
+
+/*--------------------section-cr-------------------------*/
+
+.carousel {
+    position: relative;
+    width: 100dvw;
+    height: 35rem;
+    background: #333;
+    overflow: hidden;
+}
+.slides {
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.bg-img1{
+    background-image: url(/imagenes/barber-shaving-client_667815-12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-img2{
+    background-image: url(/imagenes/barber-shop-tools-arrangement_23-2149167448.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-img3{
+    background-image: url(/imagenes/barbershop-close-up-barber-holds-razor-shaving-his-beard.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.slide.active {
+    display: block;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #b39f70;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+.arrow.left { left: 15px; }
+.arrow.right { right: 25px; }
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #fff4;
+    border-radius: 50%;
+}
+.dot.active {
+
+    background: #b39f70;
+}
